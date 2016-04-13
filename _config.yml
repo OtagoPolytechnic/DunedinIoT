@@ -9,8 +9,7 @@
 title: The Things Network Dunedin
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-We crowdsourced a complete city-wide Internet of Things data network with the people of Amsterdam in 6 weeks using a new technology named LoraWAN™. Now we are launching our global campaign to repeat this in every city in the world.
-The technology allows for things to talk to the internet without 3G or WiFi. So no WiFi codes and no mobile subscriptions. It features low battery usage, long range and low bandwidth. Perfect for the internet of things.
+We crowdsourced a complete city-wide Internet of Things data network with the people of Amsterdam in 6 weeks using a new technology named LoraWAN™. Now we are launching our global campaign to repeat this in every city in the world. The technology allows for things to talk to the internet without 3G or WiFi. So no WiFi codes and no mobile subscriptions. It features low battery usage, long range and low bandwidth. Perfect for the internet of things.
 baseurl: "http://OtagoPolytechnic.github.io/ThingsNetworkDunedin" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
