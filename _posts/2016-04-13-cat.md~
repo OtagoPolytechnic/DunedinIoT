@@ -3,4 +3,4 @@ layout: post
 title: Cat
 ---
 
-![My helpful screenshot](OtagoPolytechnic.github.io/ThingsNetworkDunedin/assets/index.jpeg)
+![My helpful screenshot](({{ site.baseurl }}/assets/index.jpeg)
