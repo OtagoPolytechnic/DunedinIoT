@@ -1,0 +1,6 @@
+---
+layout: post
+title: Cat
+---
+
+![My helpful screenshot]({{ site.url }}/assets/index.jpeg)
