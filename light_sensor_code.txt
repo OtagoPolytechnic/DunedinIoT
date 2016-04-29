@@ -1,5 +1,4 @@
 const int sensorPin = 0;
-
 const int ledPin = 9;
 
 //global variables for the light level:
