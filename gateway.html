@@ -29,6 +29,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="assets/css/src/docs.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -137,8 +138,9 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Creating a <span class="text-muted">LoRaWAN Gateway</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Creating <span class="text-muted">a LoRaWAN Gateway</span></h2>
+          <p class="lead">There are many options you can pursue when choosing the hardware to use for LoRaWAN applications. You can choose to simply buy the pre-made TTN Gateway directly from TTN themselves, or you can choose a cheaper, more DIY route.</p>
+          <p class="lead">For our LoRaWAN Gateway we chose to build and configure our own. This quick how-to describes how our gateway was created, from choosing the correct parts to installing software.</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -149,8 +151,14 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Choosing <span class="text-muted">the Correct Hardware</span></h2>
+          <p class="lead">When building the gateway for yourself you need to make sure the hardware you choose is compatible. There are multiple options, but we will only focus on the option that we pursued.</p>
+          <p class="lead">We need the following hardware before we can get started:</p>
+          <ul class="lead">
+            <li>Raspberry Pi – A Raspberry Pi is used as the main controller for the gateway. It will hold and run our software, and will be connected to the rest of our devices. Any Raspberry Pi model will do, but faster is generally better.</li>
+            <li>Multitech mCard-LoRa – This is the main sender and receiver of LoRaWAN packets, without this hardware the gateway will not be able to talk to our nodes. This device comes with an antenna, and is PCIe compatible.</li>
+            <li>USB to Mini-PCIe Convertor – This adaptor is necessary to connect the mCard to the Raspberry Pi, as the Pi does not have a Mini-PCIe slot itself.</li>
+          </ul>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -161,10 +169,62 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Hardware <span class="text-muted">Modifications</span></h2>
+          <p class="lead">Something you may need to do is a small hardware modification on the Mini-PCIe adaptor. We didn’t end up having to do it, as our board worked anyway. However, if you have completely set up the gateway and it still doesn’t seem to be working, you can try this optional step.</p>
+          <p class="lead">Sometimes it may be necessary to provide extra power to a couple of the pins on the adaptor. To do this we need to solder a wire from the 5V pin on the USB connector to pins 23 and 25 of the PCIe connector. Below is a picture of the completed modification:</p>
+          <p class="lead">That is all you need to do to modify the hardware.</p>
         </div>
         <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Installing and <span class="text-muted">Running Software</span></h2>
+          <p class="lead">To be able to install the gateway software on the Raspberry Pi, the Pi itself needs to be set up. We used Raspbian, a version of Debian designed to run on a Raspberry Pi’s architecture. We won’t cover how to install Raspbian, as there is already a lot of documentation out there for it and it can be installed incredibly quickly and easily through NOOBS for Raspberry Pi.</p>
+          <p class="lead">Once you have a working version of Raspbian on your Raspberry Pi, you need to get the gateway software. There are multiple parts of software we need, so follow the next instructions carefully:</p>
+          <figure class="highlight">
+<pre><code>sudo apt-get update
+sudo apt-get install git --assume-yes
+sudo apt-get install libftdi-dev --assume-yes
+cd ~
+wget http://libmpsse.googlecode.com/files/libmpsse-1.3.tar.gz
+tar zxvf libmpsse-1.3.tar.gz
+cd libmpsse-1.3/src
+./configure --prefix=/usr --disable-python
+make
+sudo make install
+cd /etc/udev/rules.d
+sudo wget https://raw.githubusercontent.com/mirakonta/lora_gateway/master/libloragw/99-libftdi.rules
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+sudo adduser pi plugdev
+cd ~</code></pre>
+          </figure>
+          <p class="lead">Now we have our dependencies we can download and compile the LoRaWAN Gateway Software:</p>
+          <figure class="highlight">
+<pre><code>mkdir ~/lora
+cd ~/lora
+mkdir exec
+git clone https://github.com/mirakonta/lora_gateway.git
+git clone https://github.com/mirakonta/packet_forwarder.git
+cd ~/lora/lora_gateway
+make clean all
+cd ~/lora/packet_forwarder
+make clean all
+cp ~/lora/packet_forwarder/basic_pkt_fwd/basic_pkt_fwd ~/lora/exec/
+cp ~/lora/packet_forwarder/basic_pkt_fwd/*.json ~/lora/exec/
+cd ~/lora/exec</code></pre>
+          </figure>
+          <p class="lead">The gateway code is now compiled and ready to go. To run the gateway, simply run the command:</p>
+          <figure class="highlight">
+<pre><code>sudo ./basic_pkt_fwd</code></pre>
+          </figure>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
