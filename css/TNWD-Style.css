@@ -16,3 +16,32 @@ body {
 .img-hover:hover {
     opacity: 0.8;
 }
+.small-padding {
+    padding: 50px 0px;
+}
+
+/* See-through Section Styles */
+
+.see-through-section {
+    background: url(../images/background/1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+.bg-overlay {
+    background-color: rgba(60, 102, 251, 0.3);
+}
+.see-through-section .section-description {
+    color: #ffffff;
+    padding: 0px 20%;
+}
+.see-through-hide {
+    padding-top: 30px;
+    position: relative;
+}
+.see-through-message {
+    text-align: center;
+    font-size: 1.125em;
+}
+.section-padding {
+    padding: 150px 0px;
+}
