@@ -19,20 +19,26 @@ body {
 .small-padding {
     padding: 50px 0px;
 }
+.bottom-padding {
+    padding: 0px 0px 50px 0px;
+}
+.blog-margin {
+    margin: 0px 0px 10px 0px;
+}
 
 /* See-through Section Styles */
 
 .see-through-section {
-    background: url(../assets/img/dunedin.jpg) no-repeat center center fixed;
+    background: url(../images/dunedin.jpg) no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff;
+    color: #fff;
 }
 .bg-overlay {
-    background-color: rgba(60, 102, 251, 0.3);
+    background-color: rgba(60, 102, 251, 0.6);
 }
 .see-through-section .section-description {
-    color: #ffffff;
-    padding: 0px 20%;
+    color: #fff;
+    padding: 0px 5%;
 }
 .see-through-hide {
     padding-top: 30px;
@@ -44,4 +50,8 @@ body {
 }
 .section-padding {
     padding: 150px 0px;
+}
+#see-through-middle {
+    background-color: rgb(255, 255, 255);
+
 }
