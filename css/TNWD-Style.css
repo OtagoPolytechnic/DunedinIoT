@@ -12,7 +12,7 @@ body {
 .img-portfolio {
     margin-bottom: 30px;
 }
-
+.whatsNeededRspPi p{margin: 0 10px; }
 .img-hover:hover {
     opacity: 0.8;
 }
@@ -22,14 +22,20 @@ body {
 .bottom-padding {
     padding: 0px 0px 50px 0px;
 }
+.bottom-padding-small{
+	padding-bottom: 20px;
+}
 .blog-margin {
     margin: 0px 0px 10px 0px;
 }
-
+.img-small{
+	height: 50%;
+	width: 50%;
+}
 /* See-through Section Styles */
 
 .see-through-section {
-    background: url(../images/dunedin.jpg) no-repeat center center fixed;
+    background: url(../images/background/1.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
 }
