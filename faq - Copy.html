@@ -8,12 +8,12 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!-- Custom CSS -->
     <link href="css/TNWD-Style.css" rel="stylesheet">
 	<!-- Include Footer Style Css -->
 	<link rel="stylesheet" href="css/footer.css">
-	
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  
+
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -62,22 +62,22 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-	
+
 	<!-- Page Content -->
     <div class="container">
 		</section>
         </div>
 
-    
+
     <div class="pageOutline" id="map">
         <section id="communityMap">
             <header>
@@ -85,7 +85,7 @@
                 <a href="/g/new/edit">Add a gateway</a>
             </header>
             <hr>
-            
+
     <div id="community_map" class="leaflet-container-default"></div>
 
 
@@ -101,16 +101,16 @@
     if (loadevents.length === 0) loadmap();
     else if (window.addEventListener) for (var i=0; i<loadevents.length; i++) window.addEventListener(loadevents[i], loadmap, false);
     else if (window.jQuery) jQuery(window).on(loadevents.join(' '), loadmap);
-    
+
 })();
 </script>
         </section>
-        	
+
 	</div>
     <!-- /.container -->
-	
+
 	<!-- Footer Section -->
-	<footer class="footer-distributed">
+	<!-- <footer class="footer-distributed">
 	  <div class="footer-left">
 		<a class="footer-brand" href="./"><img src="static/img/logo.jpg" alt="Site Logo"></a>
 		 <p class="footer-company-name">Company Name &copy; 2015</p>
@@ -141,9 +141,9 @@
 		  <a href="#"><i class="fa fa-github"></i></a>
 		</div>
 	  </div>
-	</footer>
+	</footer> -->
 	<!-- /.Footer Section -->
-	
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

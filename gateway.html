@@ -8,12 +8,12 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!-- Custom CSS -->
     <link href="css/TNWD-Style.css" rel="stylesheet">
 	<!-- Include Footer Style Css -->
 	<link rel="stylesheet" href="css/footer.css">
-	
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  
+
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -61,16 +61,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-	
+
 	<!-- Page Content -->
     <div class="container">
 		<div class="bottom-padding">
@@ -102,13 +102,13 @@
 					<p>When building the gateway for yourself you need to make sure the hardware you choose is compatible. There are multiple options, but we will only focus on the option that we pursued.</p>
 					<hr>
 					<div class="col-lg-4">
-						<img class="img-responsive" src="images/raspberryPi.jpg" alt=""> 
+						<img class="img-responsive" src="images/raspberryPi.jpg" alt="">
 					</div>
 					<div class="col-lg-8 bottom-padding">
 						<p class="lead">RaspberryPi</p>
 						<p>A Raspberry Pi is used as the main controller for the gateway. It will hold and run our software, and will be connected to the rest of our devices. Any Raspberry Pi model will do, but faster is generally better. We used a Raspberry Pi 1, Model B. This is one of the earlier models, but had enough speed to be able to keep up. We would recommend either a Raspberry Pi 2 or Raspberry Pi 3.</p>
-						<p class="bottom-padding-small">Differences between the models can be found <a href="https://https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications" target="_blank">HERE</a></p>  
-						<p>You can buy these boards from a variety of places around New Zealand, or you can import from overseas. I highly recommend <a href="http://nz.element14.com/raspberrypi-boards" target="_blank">element14</a>, As they are cheap and offer free delivery if your order is over $45.</p>  
+						<p class="bottom-padding-small">Differences between the models can be found <a href="https://https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications" target="_blank">HERE</a></p>
+						<p>You can buy these boards from a variety of places around New Zealand, or you can import from overseas. I highly recommend <a href="http://nz.element14.com/raspberrypi-boards" target="_blank">element14</a>, As they are cheap and offer free delivery if your order is over $45.</p>
 					</div>
 					<div class="col-lg-12">
 						<div class="col-lg-8">
@@ -118,7 +118,7 @@
 						<div class="col-lg-4">
 							<img class="img-responsive img-small" src="images/mCard.jpg" alt="">
 						</div>
-						
+
 						<div class="col-lg-8">
 							<p class="lead">USB to Mini-PCIe Convertor</p>
 							<p>This adaptor is necessary to connect the mCard to the Raspberry Pi, as the Pi does not have a Mini-PCIe slot itself.</p>
@@ -127,11 +127,11 @@
 							<img class="img-responsive img-small" src="images/mini-pcie.jpg" alt="">
 						</div>
 					</div>
-					
+
 					<div class="col-lg-8">
 						<p class="lead">Installing and Running Software</p>
 					</div>
-					<div class="col-lg-12">  
+					<div class="col-lg-12">
 						<p>To be able to install the gateway software on the Raspberry Pi, the Pi itself needs to be set up. We used <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspbian</a>, a version of Debian designed to run on a Raspberry Pi’s architecture. We won’t cover <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">how to install Raspbian</a>, as there is already a lot of documentation out there for it and it can be installed incredibly quickly and easily through NOOBS for Raspberry Pi.</p>
 					</div>
 <figure class="highlight">
@@ -175,8 +175,8 @@ cd ~/lora/exec</code></pre>
 <div class="col-lg-8">
 						<p class="lead">Running the Gateway Automatically (Headless)</p>
 					</div>
-					<div class="col-lg-12"> 
-						<p>After installing and configuring the gateway using the above steps, you may find it desirable to have the gateway software run automatically, rather than logging in to the Pi and starting it manually.</p> 
+					<div class="col-lg-12">
+						<p>After installing and configuring the gateway using the above steps, you may find it desirable to have the gateway software run automatically, rather than logging in to the Pi and starting it manually.</p>
 						<p>To do this, we would use <a href="https://en.wikipedia.org/wiki/Cron" target="_blank">Cron</a>. Cron is a job scheduler which is built-in to many versions of Linux. Do the following to start the LoRa gateway software at boot:</p>
 						&nbsp
 						<p>After logging in to the Pi, type: </p>
@@ -194,28 +194,28 @@ cd ~/lora/exec</code></pre>
 
 					</div>
 					<div class="col-lg-4">
-						<img class="img-responsive" src="images/gateway.jpg" alt=""> 
+						<img class="img-responsive" src="images/gateway.jpg" alt="">
 					</div>
 					<div class="col-lg-8 bottom-padding">
 						<p class="lead">Troubleshooting Hardware (optional)</p>
 						<p>Something you may need to do is a small hardware modification on the Mini-PCIe adaptor to provide more power to the antennae. We didn’t end up having to do it, as our board worked anyway. However, if you have completely set up the gateway and it still doesn’t seem to be working, you can try this optional step.</p>
-						<p>Sometimes it may be necessary to provide extra power to a couple of the pins on the adaptor. To do this we need to solder a wire from the 5V pin on the USB connector to pins 23 and 25 of the PCIe connector. Below is a picture of the completed modification:</p>  
+						<p>Sometimes it may be necessary to provide extra power to a couple of the pins on the adaptor. To do this we need to solder a wire from the 5V pin on the USB connector to pins 23 and 25 of the PCIe connector. Below is a picture of the completed modification:</p>
 					</div>
 
 
-      </div>					
+      </div>
 				</div>
 
-				
+
 			</div>
 			<!-- /.row -->
         </div>
-        	
+
 	</div>
     <!-- /.container -->
-	
+
 	<!-- Footer Section -->
-	<footer class="footer-distributed">
+	<!-- <footer class="footer-distributed">
 	  <div class="footer-left">
 		<a class="footer-brand" href="./"><img src="static/img/logo.jpg" alt="Site Logo"></a>
 		 <p class="footer-company-name">Company Name &copy; 2015</p>
@@ -246,9 +246,9 @@ cd ~/lora/exec</code></pre>
 		  <a href="#"><i class="fa fa-github"></i></a>
 		</div>
 	  </div>
-	</footer>
+	</footer> -->
 	<!-- /.Footer Section -->
-	
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
