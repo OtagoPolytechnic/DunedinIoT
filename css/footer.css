@@ -22,11 +22,13 @@
 }
 
 /* The company logo */
-
-.footer-brand img {
-	width:40%;
+img{
+	vertical-align: bottom;
 }
 
+.smlImgWidth{
+	width:35%;
+}
 /* Footer links */
 
 .footer-distributed .footer-links{
@@ -52,7 +54,8 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 40%;
+	
 }
 
 .footer-distributed .footer-center i{
@@ -96,44 +99,39 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 20%;
-}
+	width: 15%;
 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
 }
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
+.footer-distributed .footer-right i{
 	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
 	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
 	text-align: center;
-	line-height: 35px;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
 
-	margin-right: 3px;
-	margin-bottom: 5px;
+.footer-distributed .footer-right p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-right p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-right p a{
+	color:  #5383d3;
+	text-decoration: none;;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
