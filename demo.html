@@ -11,21 +11,6 @@
 
   <!-- jQuery UI Datepicker functionality -->
   <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <!-- Custom Javascript -->
-  <script>
-     $(function() {
-        $( "#datepicker-3" ).datepicker({
-           //appendText:"(yy-mm-dd)",
-           dateFormat:"d/m/y",
-           //altField: "#datepicker-4",
-           //altFormat: "DD, d MM, yy"
-        });
-     });
-  </script>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -101,8 +86,6 @@
     </div>
     <div class="col-lg-12">
       <svg width="960" height="500"></svg>
-      <script src="https://d3js.org/d3.v4.min.js"></script>
-      <script src="js/graph.js"></script>
     </div>
   </div>
 </div>
@@ -137,6 +120,15 @@
 
 </footer>
 <!-- /.Footer Section -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!-- Required Javascript for Graph -->
+<script src="js/formatdate.js>"</script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/graph.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
