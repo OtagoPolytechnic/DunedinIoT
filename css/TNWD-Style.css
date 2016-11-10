@@ -11,6 +11,9 @@ body {
 .tempHeight{
 	height:300px;
 }
+.tempHeightSml{
+  height:30px;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
