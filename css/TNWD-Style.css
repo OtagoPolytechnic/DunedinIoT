@@ -11,6 +11,9 @@ body {
 .tempHeight{
 	height:300px;
 }
+.tempHeightMed{
+	height:200px;
+}
 .tempHeightSml{
   height:30px;
 }
