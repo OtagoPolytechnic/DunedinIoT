@@ -1,5 +1,0 @@
-name: op-lora.net.nz
-markdown: kramdown
-#highlighter: rouge
-#encoding: bom|utf-8
-permalink: /blog/:year/:month/:day/:title
