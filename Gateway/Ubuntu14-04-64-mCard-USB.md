@@ -1,5 +1,5 @@
 
-# Ubuntu Trusty (14.04) LoraMcard - Preparing a test gateway host in a VirtualBox VM
+# Ubuntu Trusty (14.04) with Lora mCard - Preparing a test gateway host in a VirtualBox VM
 
 
 ## Prep:
