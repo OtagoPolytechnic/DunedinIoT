@@ -8,12 +8,14 @@
 * Plug Mcard/USB into PC.
 * Select virtual machine, click settings, click USB, add a USB device filter for FDTI device.
 
+-----------------
 
 ## Set up:
 1. Install 32 bit ftdi drivers to talk to the mCard:
 
 `sudo apt-get install libftdi1:i386`
 
+-----------------
 
 2. Install 32 SSL 1.0.2 installed, supplied by 3rd party repository:
 
@@ -27,6 +29,7 @@
 
 `openssl version -a`
 
+-----------------
 
 3. Download the libmpsse source and compile/install :
 
@@ -46,13 +49,13 @@
 
 `sudo make install`
 
-
+-----------------
 
 4. Unplug card, power off VM, replug card, and power on VM.
 
 The gateway is now ready for packet forwarding software, for example:
 
-5. To test with Loriot:
+To test with Loriot:
 
  Open a terminal and get the Loriot binary address (it's different for every server, this gateway is registered on us1.loriot.io )
 
