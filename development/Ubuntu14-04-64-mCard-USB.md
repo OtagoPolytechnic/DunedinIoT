@@ -1,3 +1,8 @@
+---
+layout: default
+title: Development - LoRa mCard Guide using Ubuntu Trusty
+---
+
 
 # Ubuntu Trusty (14.04) with Lora mCard - Preparing a test gateway host in a VirtualBox VM
 
