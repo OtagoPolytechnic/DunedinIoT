@@ -1,0 +1,11 @@
+Meeting 5:
+Catchup:
+- Oscar: working on NetwID, NodeID
+- Shield and gateway in customs, on the way, 3-4 weeks.
+- Adon: Meeting with Jesse Monday @ 1pm D205
+- Brendan: trying to build room sensor. Running out of mem even without all sensors. Too many vars. Need to get RTC for sleep() and time-stamping.
+Battery banks auto turn-off when not active. 4x AA batteries? CO2 sensors tsake about an hour to prep(warm-up).
+- Zoe: Erased data on SD card (RasPi), fresh start.
+- Gateway needs mains, other cables
+HaxIoT is compatible with LoRaIoT, and Loraserver?
+Jekyll - Website blends with GitHub. Multiple repos represented on a single website. Tutorial on PP slack channel.

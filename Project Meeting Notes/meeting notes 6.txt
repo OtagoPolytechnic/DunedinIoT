@@ -1,0 +1,58 @@
+Meeting 6: 27/03/2017
+
+Self signing CA security, open-source CA
+Findingh an alternative gateway? Kerlink?
+Meet on Thursday - Talk about case study.
+
+USB can be a pain, over time they go 'stale'.
+
+Gateway -> RasPi -> Loraserver
+
+Difficulty routing directly using Uni network, maybe same with Poly? Get trial working on simulated environment, 
+everything set up in the room basically, before moving to real world.
+
+Kotahi: buys licence to LoRaIoT. Moved down to 866.
+
+"How am I going to debug this before it's out on the field?" V IMPORTANT.
+
+External antenna on nodes. RF interference with antenna eg casing interference. 
+
+University network vector analyser.
+
+Debug at node, and check if the server has received the same information
+
+Frequency - IRF Band and power.
+
+902-928: power restrictions within that band.
+915-928: allow to transmit more power over RF band?
+below 920. SigFox transmits from 920-925.
+
+Maybe 915-920? Or 925-928, use a couple of MhZ either side.
+
+Channels: 200KhZ wide.
+
+3 repeats, each on different channel. Testing should use 7.
+
+2.4GhZ BLE and Sub GHz ISM radios.
+
+2.4GhZ processor, with subGhZ (915, 864 Bluetooth), for pest trap.
+
+Contiki OS.
+
+New Zealand Gazette No7 Radio Communication Regulation. Operate within these frequencies requires no registration.
+
+Mesh, SigFox (Tussock prefers SigFox, limited data transmission (12 bytes), 30km range, whereas LoRa has no limitation, way easier setup, costs more, documented API, GitHub repo with demos, own server hosting available).
+Thinxtra wants Uni to use their network.
+
+Bluetooth communication to config nodes locally.
+
+traps.haloproject.org.nz
+
+Basic requirements:
+demo webapp.
+run LoRaIoT with current devices, then work on webapp to display info.
+What's stable vs what's not stable?
+
+
+
+
