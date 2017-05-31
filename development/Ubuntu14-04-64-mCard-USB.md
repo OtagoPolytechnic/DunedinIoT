@@ -40,7 +40,7 @@ title: Development - LoRa mCard Guide using Ubuntu Trusty
 
 `sudo apt-get install swig libftdi-dev python-dev`
 
-`wget https://github.com/devttys0/libmpsse/archive/master.zip -O libmpsse.zip`
+`wget https://github.com/kellybs1/libmpsse/archive/master.zip -O libmpsse.zip`
 
 `unzip libmpsse.zip`
 
