@@ -22,7 +22,7 @@ title: Development - LoRa mCard Guide using Ubuntu Trusty
 
 -----------------
 
-2. Install 32 SSL 1.0.2 installed, supplied by 3rd party repository:
+2. Install SSL 1.0.2, supplied by 3rd party repository:
 
 `openssl version -a`
 
