@@ -19,7 +19,8 @@ Adafruit DHT library (https://github.com/kellybs1/DHT-sensor-library)
 
 ## Wiring
 
-Note Dragino shield not included in diagram but must be installed
+Note: Dragino shield not included in diagram but must be installed
+Note: Draginmo shield leaves pins 0,1,4,5,6 for use
 
 <img src="Dragino868TempHumidLDR_bb.png" width="400">
 
