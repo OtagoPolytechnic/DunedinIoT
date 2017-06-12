@@ -8,7 +8,6 @@ title: Lux Sensor Example
 ## Hardware required
 1. Arduino Uno or compatible
 2. Adafruit TSL 2561 Lux sensor (https://www.adafruit.com/product/439)
-3. 330 Ohm resistor
 
 ## Additional software libraries
 1. Adafruit Unified Sensor Driver: https://github.com/kellybs1/Adafruit_Sensor
