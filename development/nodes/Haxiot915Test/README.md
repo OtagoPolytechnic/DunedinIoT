@@ -14,7 +14,7 @@ title: Haxiot LoRa shield with Arduino Uno
 
 ## Wiring
 
-<img src="Haxiot915Test" width="400">
+<img src="Haxiot915Test.jpg" width="400">
 
 None, just install the Arudino shield onto the Arduino board
 
