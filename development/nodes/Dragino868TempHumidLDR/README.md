@@ -7,6 +7,8 @@ title: Dragino LoRa shield (868MHz) temperature/humidity with LDR example
 
 As displayed as Mid-year showcase 2017
 
+<img src="Dragino868TempHumidLDR_real.jpg" width="400">
+
 ## Hardware required
 1. Arduino Uno or compatible
 2. Dragino 868Mhz LoRa Arduino shield 
