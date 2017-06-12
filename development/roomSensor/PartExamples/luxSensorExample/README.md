@@ -10,8 +10,8 @@ title: Lux Sensor Example
 2. Adafruit TSL 2561 Lux sensor (https://www.adafruit.com/product/439)
 
 ## Additional software libraries
-1. Adafruit Unified Sensor Driver: https://github.com/kellybs1/Adafruit_Sensor
-1. Adafruit TSL2561 library: https://github.com/kellybs1/Adafruit_TSL2561
+1. Adafruit Unified Sensor Driver (https://github.com/kellybs1/Adafruit_Sensor)
+2. Adafruit TSL2561 library (https://github.com/kellybs1/Adafruit_TSL2561)
 
 ## Wiring
 
