@@ -22,7 +22,7 @@ title: Room sensor data logger
 1. Adafruit Unified Sensor Driver (https://github.com/kellybs1/Adafruit_Sensor)
 2. Adafruit TSL2561 library (https://github.com/kellybs1/Adafruit_TSL2561)
 3. Fabio Cuomo's DS3231 Library (https://github.com/kellybs1/FabioCuomo-DS3231)
-4. rocketscream's Low Power library (https://github.com/kellybs1/Low-Power)
+4. rocketscream's Low Power library (https://github.com/kellybs1/Low-Power)  Please note <a href=="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/development/roomSensor/PartExamples/rtcLEDLowPowSleep/Modifying%20Low-Power%20library%20for%20Mega%202560.md">source modifications required for Mega 2560 compatibility</a>
 5. Adafruit DHT library (https://github.com/kellybs1/DHT-sensor-library)
 
 ## Wiring
