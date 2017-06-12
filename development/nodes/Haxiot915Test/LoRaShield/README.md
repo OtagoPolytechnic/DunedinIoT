@@ -1,5 +1,3 @@
-https://haxiot.com/shop/arduino-lorawan-us900/?doing_wp_cron=1497240303.0183570384979248046875
-
 ---
 layout: default
 title: Haxiot LoRa shield with Arduino Uno
