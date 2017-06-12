@@ -13,7 +13,7 @@ title: LDR Example
 ## Additional software libraries
 None
 
-## Wiriring
+## Wiring
 
 <img src="ldr_wiring.png" width="400">
 
