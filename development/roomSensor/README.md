@@ -1,5 +1,5 @@
 
-# Smart room sensor and data logger devlopment
+# Smart room sensor and data logger prototype
 
 ## Authors:
 Brendan Kelly
