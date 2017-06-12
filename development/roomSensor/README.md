@@ -1,3 +1,8 @@
+---
+layout: default
+title: Smart room sensor and data logger prototype
+---
+
 
 # Smart room sensor and data logger prototype
 
