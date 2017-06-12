@@ -3,7 +3,7 @@ layout: default
 title: Dragino LoRa shield (868MHz) temperature/humidity example 
 ---
 
-#  Dragino LoRa shield (868MHz) temperature/humidity example for IoT Dunedin server and 867MHz ic880a based gateway
+#  Dragino LoRa shield (868MHz) temperature/humidity example for IoT Dunedin server and 868MHz ic880a based gateway
 
 ## Hardware required
 1. Arduino Uno or compatible
