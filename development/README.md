@@ -4,7 +4,7 @@ title: Development Home
 ---
 
 
-# Home page for development seciotn
+# Home page for development section
 
 
 
