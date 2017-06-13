@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Prototype nodes
+---
 
 # Prototype nodes
 
