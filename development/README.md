@@ -17,3 +17,10 @@ links to subfolders should be here
 [Loriot Gateway](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/gateways/Loriot-VM-Linux-64-Gateway.html)
 
 [TTN Gateway](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/gateways/iC880a-TTN-Gateway.html)
+
+## Nodes
+[Nodes](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/nodes/README.html)
+
+## Sensors
+[Room Sensor](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/roomSensor/README.html)
+
