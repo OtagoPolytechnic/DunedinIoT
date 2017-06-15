@@ -13,5 +13,7 @@ This repository documents devices and code created/used during developemnt of Du
 
 
 links to subfolders should be here
+## Gateways
+[Loriot Gateway] (http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/gateways/Loriot-VM-Linux-64-Gateway.html)
 
-
+[TTN Gateway] (http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/gateways/iC880a-TTN-Gateway.html)
