@@ -11,12 +11,17 @@ Closed source hardware and software making it difficult to fix and find informat
 Uses PoE (Power over Ethernet) and includes outdoor mounting hardware for easy installation.  
 Runs linux on an ARM processor and uses Ethernet or a 3G cellular data connection as its backhaul.
 
+<img src="kerlink.png" width="200px" height="200px">
+
 
 ## Multitech Conduit
 
 Configurable solution with many options available due to having expansion bays.  
 Uses a LoRaWAN mCard to support thousands of MultiConnect mDot modules.
-Committed support and lots of easy to understand documentation
+Committed support and lots of easy to understand documentation.
+
+<img src="multitech_conduit.jpg" width="200px" height="200px">
+
 
 ### MultiConnect mDot modules:
 Suitible for New Zealand frequencies as they support 868 MHz SRD 
@@ -24,9 +29,14 @@ and 915 MHz ISM bands (New Zealand).
 
 Though the Kerlink LoRa IoT Station and Multitech Conduit are great solutions they are also more expensive than some other solutions.
 
+<img src="mDot_modules.png" width="200px" height="200px">
+
+
 ## Haxiot gateway
 Requires a raspberry pi or configured virtual machine to act as a gateway.
 Guides and example code is offered.
+
+<img src="haxiot_gateway.png" width="200px" height="200px">
 
 
 ### Haxiot Arduino shield:
