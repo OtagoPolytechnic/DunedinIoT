@@ -41,6 +41,6 @@ Mosquitto is a message broker that uses the MQTT protocol.  Use mosquitto_pub to
 * Mobile application
 On a mobile application the client uses an HtmlUrlConnection POST request to get the authenticated users JWT (JSON Web Token).  This can then be used to make further GET and POST requests.
 
-Another alternative is to use a service such as LORIOT which is a paid service (though they offer a trail version) offering a backend server for gateway to connect to and limited front end for testing, it is designed to be connected to an existing application.  They allow for many ways to get the data such as using websockets, HTTP PUSH / REST, TLS Socket and MQTT directly from their platform or using cloud services such as IBM BlueMix, Microsoft Azure or Amazon Web Services.
+* Another alternative is to use a service such as LORIOT which is a paid service (though they offer a trail version) offering a backend server for gateway to connect to and limited front end for testing, it is designed to be connected to an existing application.  They allow for many ways to get the data such as using websockets, HTTP PUSH / REST, TLS Socket and MQTT directly from their platform or using cloud services such as IBM BlueMix, Microsoft Azure or Amazon Web Services.
 
 
