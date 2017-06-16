@@ -1,4 +1,4 @@
-name: IoT Dunedin
+name: ThingsNetworkDunedin
 markdown: kramdown
-baseurl: /IoTDunedin
+baseurl: /ThingsNetworkDunedin
 theme: jekyll-theme-cayman
