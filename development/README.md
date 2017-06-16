@@ -24,3 +24,7 @@ links to subfolders should be here
 ## Sensors
 [Room Sensor](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/roomSensor/README.html)
 
+## Server
+[TTN Server](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/servers/TTNserver/basicTTNGuide.html)
+[LoRa Server](http://otagopolytechnic.github.io/ThingsNetworkDunedin/development/servers/LoraserverSetupSteps.html)
+
