@@ -2,24 +2,19 @@
 
 Grant:
 Zoe has notes, gave to Adon. Will forward to everyone
-$20,000 from Internet NZ: put LoRaNET in Dunedin, other talks about 
-$5,500 is gone, from OP research overhead
-
-Budgety down to $14,000.
 
 Sense of urgency, contract was signed 1.5 years ago!
 IoT presentation with Counsel, Nokia, Chorus, interest in Smart City in Dunedin. Net already up Kotahi Net, run by Mega (Kim Dot Com associate)
-Tussok tasked as initial IoT project. Competition 2 years ago ish about setting up smart city. Started with flooding sensors. Looking at mud traps levels.
+Tussok tasked as initial IoT project. Competition 2 years ago (ish) about setting up smart city. Started with flooding sensors. Looking at mud traps levels.
 Gigatown related funding. Deployed sensors on Kotaki Net, issues with line of site, but it's partly working. Wasn't what the counsel was wanting. No consistency in levels across Dunedin.
 Interested in the covering of the drains and the silt levels at the bottom.
 Moving away from LoRa, which leaves it open for us. Interested in getting their own devices onto a different net, aka LoRa
 Bus routes, water quality. Lots of excitement for another working network.
 Adon mentioned that it could be working by July on our behalf.
 
-Back on Grant:
 Sam: Big picture stuff. Net up and running, such and such community projects, 8+ per year, 4 research outputs.
 
-Steven Turnbull: head of ISS, acting deputy leader for. Interested in getting gateway at top of F block. Key in deployment, with contacts all over town.
+Head of ISS, acting deputy leader. Interested in getting gateway at top of F block. Key in deployment, with contacts all over town.
 For ease and testing, LoRa Gateway would go on top of F block. From there, look at competing requests and as a group decide where to put next gateway.
 Has 2 other gateway locations (Roslyn, South D)
 
@@ -40,7 +35,7 @@ Time VS Stability VS Money.
 3-5 days delivery within NZ. Weeks-Months for international. Rob says get from national sources. Money can be found for these projects.
 
 Local companies: Semtech (Auckland), another one or two.
-Tussok recommends: tried and tested, really stable hardware. Guy isn't around until 2nd week of March.
+Tussok recommends: tried and tested, really stable hardware.
 
 Frequency:
 Kotahi 966 frequency
@@ -49,22 +44,9 @@ He recommends high 920s
 Someone else uses 922
 925 might be the highest we can go.
 
-Budgeting:
-$14,000
-Sensors: water levels for the gardens. Weight/secondary for bins. Room sensors (all emcumbersing), the big one. In the hundreds, not thousands. $3000 ($500- $600 per round)
-Go off the shelf with your gateways. Eg Tussock is off the shelf and heavily modified.
-$2000 for food, research costs, etc
-$2000 for installation costs
-$7000 for gateways.
 
-Look at ways to economise on budget. Multitasking installation costs.
 
 
 3 Options for gateway/source. Decide by Monday.
 1. US. $399. USB put onto PC or Raspberry Pi
 1. Local: $1700 from Auckland
-
-To Receive:
-Grant Report
-Documentation
-Have a chat with Greg (outside the building)
