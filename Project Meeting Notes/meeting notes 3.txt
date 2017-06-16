@@ -3,7 +3,7 @@ Server being configured, might need something called lora app server
 Are we checking trello?
 Github page is up and running, need everyones email so they can be invited.
 Tom is in charge of the Git repo online
-Do the CASE STUDY, DUE NEXT MONDAY!!! Note to self: case study needs to be done individualy by each of us.
+Do the CASE STUDY, DUE NEXT MONDAY!!!
 Again, check trello
 Extra ideas for tasks that can be done while waiting.
 Phil Curr would like a room sensor now. Having problems in the Auckland Campus that can be solved with a room sensor. Brendan and Campbell might be suited for this.
@@ -19,10 +19,3 @@ documenting network diagrams
 Write over server OS with ubuntu.
 
 Packet Injection to test the server.
-
-
-
-Aside notes:
-Brendan didn't get a lot of sleep, his cat was vomiting last night
-Zoe gave a loaf of bread to Oscar. She works in a bakery and gets free bread. She wasn't going to eat it and it would have gone to waste.
-Tom needs a new phone
