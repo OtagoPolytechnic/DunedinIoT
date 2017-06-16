@@ -14,11 +14,11 @@ Then start the service `sudo sh start.sh`
 One of the ways to get the data from the server you use the MQTT protocol.  MQTT allows clients to connect to a broker to publish messages (based on topics) and subscribe to topics.  This allows clients to get the data being sent and use it for an application.
 For more information on MQTT please visit https://mosquitto.org/man/mqtt-7.html 
 
-Get the data:
+## Get the data:
 You can then subscribe from another computer using `mosquitto_sub -t "application/1/#" –v` to get the data.  The –t “…” is the MQTT topic to subscribe to in this case it will get the data from the application with the ID of 1.  The –v is a verbose output which will print the messages as topic payload
 
 
-Different ways to see the data
+## Different ways to see the data
 
 To create a new user if required:
 Login to https://10.118.0.93:8080/#/login?_k=9ifapi then click the users tab at the top right of the page. 
@@ -31,7 +31,6 @@ To use the REST API you need a JWT (JSON Web Token)
 See documentation at https://10.118.0.93:8080/api#!/Internal/Login for using a POST request to get a JWT.  You will need to pass the POST request your account username and password.
 
 To get a list of applications you can use a GET request using the JWT previously requested as authorisation.  Documentation at https://10.118.0.93:8080/api#!/Application/List 
-
 
 
 To subscribe to a topic an option is using a Mosquitto subscription the command for this is `mosquitto_sub -h 10.118.0.93 -t "application/1/#" –v`
