@@ -41,6 +41,9 @@ To get a list of applications you can use a GET request using the JWT previously
 * Mobile application
 On a mobile application the client uses an HtmlUrlConnection POST request to get the authenticated users JWT (JSON Web Token).  This can then be used to make further GET and POST requests.
 
+*Using CURL
+Powershell <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/accessingServerData/lora-app-server-API.ps1">script</a>  to get the JWT token from the server, to later use the API
+
 * Another alternative is to use a service such as LORIOT which is a paid service (though they offer a trail version) offering a backend server for gateway to connect to and limited front end for testing, it is designed to be connected to an existing application.  They allow for many ways to get the data such as using websockets, HTTP PUSH / REST, TLS Socket and MQTT directly from their platform or using cloud services such as IBM BlueMix, Microsoft Azure or Amazon Web Services.
 
 
