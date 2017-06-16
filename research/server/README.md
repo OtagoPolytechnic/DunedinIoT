@@ -1,6 +1,3 @@
-Information about the two main server options available.
-
-
 # Main Server Options
 
 ## Internet of Things server
