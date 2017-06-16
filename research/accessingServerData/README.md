@@ -3,7 +3,7 @@ layout: default
 title: Getting data from the server
 ---
 
-# Document ways to see data from server
+# How to see data from the server
 
 Start the gateway using:
 Ensure the service `start.sh` is stopped you can check this using the command `ps –A`  
