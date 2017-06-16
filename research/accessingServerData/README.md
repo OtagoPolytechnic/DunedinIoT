@@ -1,4 +1,7 @@
-Document ways to see data from server
+
+
+
+# Document ways to see data from server
 
 Start the gateway using:
 Ensure the service `start.sh` is stopped you can check this using the command `ps –A`  
