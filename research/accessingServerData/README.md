@@ -1,5 +1,7 @@
-
-
+---
+layout: default
+title: Getting data from the server
+---
 
 # Document ways to see data from server
 
