@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Development Home
+title: Server
 ---
 
 # Research
