@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Research on Gateways
+title: Gateways Research
 ---
 
 # Research on Gateways
