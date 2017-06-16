@@ -1,1 +1,1 @@
-Information about the two server options available.
+Information about the two main server options available.
