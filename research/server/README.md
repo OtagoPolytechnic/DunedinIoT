@@ -1,10 +1,15 @@
+---
+layout: default
+title: Development Home
+---
+
 # Main Server Options
 
 ## Internet of Things server
-https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/server/TheThingsNetworkServer.md
+[TheThingsNetwork Server](http://otagopolytechnic.github.io/ThingsNetworkDunedin/research/server/TheThingsNetworkServer.html)
 
 ## LoRa Server
-https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/server/TheThingsNetworkServer.md
+[LoRa Server](http://otagopolytechnic.github.io/ThingsNetworkDunedin//research/server/TheThingsNetworkServer.html)
 
 ## Loriot
-https://www.loriot.io/
+[Loriot](https://www.loriot.io/)
