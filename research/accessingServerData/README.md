@@ -34,7 +34,6 @@ To get a list of applications you can use a GET request using the JWT previously
 
 
 
-
 To subscribe to a topic an option is using a Mosquitto subscription the command for this is `mosquitto_sub -h 10.118.0.93 -t "application/1/#" –v`
 
 Mosquitto is a message broker that uses the MQTT protocol.  Use mosquitto_pub to publish a message on a topic and exit.  Use mosquito_sub to subscribe to a topic and print the messages it receives.
