@@ -65,4 +65,4 @@ You can check your `ttnctl` configuration by running `ttnctl config`. It should 
 
 ## License
 
-Source code for The Things Network is released under the MIT License, which can be found in the [LICENSE](LICENSE) file. A list of authors can be found in the [AUTHORS](AUTHORS) file.
+Source code for The Things Network is released under the MIT License, which can be found in the [LICENSE](https://github.com/TheThingsNetwork/ttn/blob/develop/LICENSE) file. A list of authors can be found in the [AUTHORS](https://github.com/TheThingsNetwork/ttn/blob/develop/AUTHORS) file.
