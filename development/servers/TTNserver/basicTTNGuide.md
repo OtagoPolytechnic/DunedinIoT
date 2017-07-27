@@ -13,7 +13,7 @@ When you get started with The Things Network, you'll probably have some question
 - Check out our [website](https://www.thethingsnetwork.org/)
 - Read the [official documentation](https://www.thethingsnetwork.org/docs/)
 - Register on the [forum](https://www.thethingsnetwork.org/forum/) and search around
-- Join [Slack](https://slack.thethingsnetwork.org) and ask us what you want to know
+- Join [Slack](https://slofile.com/slack/thethingsnetwork) and ask us what you want to know
 - Read background information on the [wiki](https://www.thethingsnetwork.org/wiki/)
 
 ## Installing and Running The Things Network Stack
