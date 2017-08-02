@@ -1,19 +1,27 @@
 # Frequently Asked Questions
 
 
-* **What is the IoT Dunedin project?**
+* **What is the IoT Dunedin project?** 
+
   + Answer
-* **What does the IoT Dunedin project do?**
+* **What does the IoT Dunedin project do?** 
+
   + Answer
-* **What does the IoT Dunedin prject provide?**
+* **What does the IoT Dunedin prject provide?** 
+
   + Answer
-* **How can I contact the IoT Dunedin project?**
+* **How can I contact the IoT Dunedin project?** 
+
   + Answer
-* **What is IoT?**
+* **What is IoT?** 
+
   + Answer
-* **What is LoRa?**
+* **What is LoRa?** 
+
   + Answer
-* **Why should I use LoRa?**
+* **Why should I use LoRa?** 
+
   + Answer
-* **Why should I not use LoRa?**
+* **Why should I not use LoRa?** 
+
   + Answer
