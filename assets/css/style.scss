@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-ul {
+.page-header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ ul {
     text-align: center;
 }
 
-li {
+.page-header li {
    // float: left;
     padding: 0;
     display: inline-block;
@@ -27,7 +27,7 @@ li {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-li a {
+.page-header li a {
     display: inline-block;
     color: rgba(255,255,255,0.7);
     text-align: center;
@@ -36,16 +36,16 @@ li a {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.page-header li a:hover, .dropdown:hover .dropbtn {
     //background-color: red;
     text-decoration: none;
 }
 
-li.dropdown {
+.page-header li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+.page-header .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -54,7 +54,7 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.page-header .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -62,8 +62,8 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.page-header .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
+.page-header .dropdown:hover .dropdown-content {
     display: block;
 }
