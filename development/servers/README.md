@@ -3,6 +3,7 @@ layout: default
 title: Servers
 ---
 
-## Servers
+# Servers
 
-```Needs editing```
+## LoRa Server
+[Setup Steps](https://otagopolytechnic.github.io/ThingsNetworkDunedin/development/servers/LoraserverSetupSteps.html)

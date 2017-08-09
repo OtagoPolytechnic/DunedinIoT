@@ -5,6 +5,10 @@ title: Home
 
 # IoT Dunedin
 
+## Our Mission:
+To research and develop an open LoRaWAN consisting of one or more gateway devices, multiple sensor devices, and a central server. All of this in the central Dunedin area, to provide access to user data for use in custom mobile/web/desktop applications.
+
+
 ## What is the Internet of Things?
 The Internet of Things is the inter-networking of devices such as smart devices, sensors, software, and other items embedded with electronics.
 Connecting these devices to a network creates the Internet of Things and enables the collection and exchange of data between devices and server. 
@@ -14,9 +18,6 @@ different technology to achieve *this*. Our Iot solution is implemented using Lo
 ## LoRaWAN Network
 LoRaWAN is a low-power, long-range wide area network standard devised by the LoRa Alliance.
 It is intended for long-life, battery operated sensor devices to communicate sensed data to a central server via one or more internet-connected gateway devices capable of receiving radio transmissions.
-
-## Our Goal:
-To research and develop an open LoRaWAN consisting of one or more gateway devices, multiple sensor devices, and a central server. All of this in the central Dunedin area, to provide access to user data for use in custom mobile/web/desktop applications.
 
 
 ### Current Status:

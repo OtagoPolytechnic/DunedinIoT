@@ -1,3 +1,9 @@
+---
+layout: default
+
+title: IoT Research
+---
+
 ## What is the Internet of Things?
 The Internet of Things is the inter-networking of devices such as smart devices, sensors, software, and other items embedded with electronics.
 Connecting these devices to a network creates the Internet of Things and enables the collection and exchange of data between devices and server. 
