@@ -1,6 +1,6 @@
-# Dunedin IoT
+# Dunedin IoT - Home
 
-# WE HAVE MOVED!
+## WE HAVE MOVED!
 
 Our new homepage is: [https://bit-project-sites.pages.op-bit.nz/iot/](https://bit-project-sites.pages.op-bit.nz/iot/ "https://bit-project-sites.pages.op-bit.nz/iot/")
 
