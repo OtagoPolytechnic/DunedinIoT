@@ -1,0 +1,10 @@
+s = db.node_data
+a = s.findOne()
+as = a["dataEntries"]
+
+# This is a projection, selecting only the necessary data rather than selecting whole data.
+db.node_data.find({},{"dataEntries.gwTime" : 1, _id : 0})
+
+# this should just return the most recent one, but it still returns the entire collection:
+db.node_data.find({},{"dataEntries.gwTime" : 1, "dataEntries.data" : 1, _id : 0}).sort({"dataEntries.gwTime" : 1}).limit(1)
+

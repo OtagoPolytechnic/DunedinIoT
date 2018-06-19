@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="loginstyle.css">
+
+<body>
+
+<h2>Welcome to Dunedin Internet of Things</h2>
+
+<button onclick="document.getElementById('log').style.display='block'" style="width:auto;">Login</button>
+
+
+<div id="log" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    <h2>Internet of Things</h2>
+      <span onclick="document.getElementById('log').style.display='none'" class="close" title="Close">&times;</span>
+      <img name="person" src="https://otagopolytechnic.github.io/DunedinIoT/img/person.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username:</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('log').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the loginscreen
+var loginscreen = document.getElementById('log');
+
+// When the user clicks anywhere outside of the loginscreen, close it
+window.onclick = function(event) {
+    if (event.target == loginscreen) {
+        loginscreen.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>

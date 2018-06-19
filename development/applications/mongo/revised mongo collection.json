@@ -1,0 +1,31 @@
+{
+        "_id" : ObjectId("598ba2601b062139f704a0f5"),
+        "applicationName" : "test-application",
+        "nodeName" : "test-node",
+        "fCnt" : 189,	// replace fCnt on every update?
+		// add new embedded document (data entry) to dataEntries
+        "dataEntries" : [
+			{
+				"data" : "TQpPiFuywG1IM1caMcHrGtiADqhKqAFBkw7LIZEz2QD6YJvv"
+				"gwTime" : ISODate("2017-08-10T00:01:42.910Z")
+				"txInfo" : "compressedString?"
+			},
+			{
+				"data" : "TQpPiFuywG1IM1caMcHrGtiADqhKqAFBkw7LIZEz2QD6YJvv"
+				"gwTime" : ISODate("2017-08-10T00:01:42.910Z")
+				"txInfo" : "compressedString?"
+			}
+		],
+        "devEUI" : "c78310ce9ba0ffb4",
+        "applicationID" : "1"
+}
+
+db.test.update(
+   { _id : ObjectId("598ba2601b062139f704a0f5") },
+   { $push : "dataEntries"{
+				"data" : "TQpPiFuywG1IM1caMcHrGtiADqhKqAFBkw7LIZEz2QD6YJvv"
+				"gwTime" : ISODate("2017-08-10T00:01:42.910Z")
+				"txInfo" : "compressedString?"
+			}
+	}
+)

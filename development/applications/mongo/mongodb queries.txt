@@ -1,0 +1,116 @@
+db.node_data.aggregate([
+    {
+        "$unwind": "$dataEntries"
+    },   
+    {
+        "$group": { 
+            "_id": null,
+            "dataEntries": {
+                "$push": {
+                    "data": "$dataEntries.data",
+                    "gwTime": "$dataEntries.gwTime"
+                }
+            }
+        }
+    },
+    {
+        "$unwind": "$dataEntries"
+    },
+    {
+        "$project": {
+            "_id": 0, "data": "$dataEntries.data", "gwTime": "$dataEntries.gwTime"
+        }
+    }
+])
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.aggregate([
+	{
+        "$unwind": "$dataEntries"
+    }, 
+	{
+		$group :{
+			"_id" : null,
+			"dataEntries": {
+				"$push": {
+					"data":"$dataEntries.data",
+					"gwTime": "$dataEntries.gwTime"
+				}
+			}
+		}
+	},
+	{
+        "$unwind": "$dataEntries"
+    },
+    {
+        "$project": {
+            "_id": 0, "data": "$dataEntries.data", "gwTime": {
+						$max : "$dataEntries.gwTime"
+					}
+        }
+    }
+])
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.aggregate([
+	{
+        "$unwind": "$dataEntries"
+    },
+    {
+        "$project": {
+            "_id": 0, "data": "$dataEntries.data", "gwTime": {
+						$max : "$dataEntries.gwTime"
+					}
+        }
+    }
+])
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.aggregate([
+	{
+        "$unwind": "$dataEntries"
+    }
+])
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.findOne({"devEUI":"0000000000000001"},{"dataEntries":1})
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.aggregate([
+	{
+		$match:{
+			"devEUI":"0000000000000001"
+		}
+	},
+	{
+		$sort:{
+			"dataEntries.gwTime":1
+		}
+	},
+	{
+		$group:{
+		"_id": null,
+			"gwTime" :{
+				$first: "$dataEntries.gwTime"
+			}
+		}
+	}
+])
+
+--------------------------------------------------------------------------------------------------
+
+db.node_data.aggregate([
+	{
+		$group:{
+			"_id": null,
+			"times" :{
+				$first: "$dataEntries.gwTime"
+			}
+		}
+	}
+])

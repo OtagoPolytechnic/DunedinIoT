@@ -1,0 +1,7 @@
+db.node_data.aggregate([
+    {
+        $project:{
+            earliest:{$min:"$dataEntries.gwTime"}
+        }
+    }
+])

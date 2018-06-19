@@ -1,0 +1,105 @@
+MongoDB Tutorial
+Database - physical container for collections. Single MongoDB server hosts multiple databases
+Collection - group of (usually) simillar MongoDB documents that can have different fields (equivalent to RDBMS table) inside a database. No schema enforcement.
+Document - set og key-value pairs. Dynamic schema.
+Embedded Documents - Equivalent to Table Join in RDBMS.
+_id - equivalent to Primary Key in RDBMS. Can be provided or generated.
+-- first 4 bytes: current timestamp
+-- 3 bytes: machine id
+-- 2 bytes: process id
+-- last 3 bytes: simple incremental VALUE
+
+MongoDB is schema-less, structure of a single object is clear, no complex joins, deep query-ability, no need for conversion/mapping of application objects to data objects.
+IF the data is already in JSON, it can be easier to store documents (JSON Document Oriented Storage)
+
+mongo
+db.help()
+db.stats()
+
+Some considerations while designing Schema in MongoDB
+
+- Design your schema according to user requirements.
+- Combine objects into one document if you will use them together. Otherwise separate them (but make sure there should not be need of joins).
+- Duplicate the data (but limited) because disk space is cheap as compare to compute time.
+- Do joins while write, not on read.
+- Optimize your schema for most frequent use cases.
+- Do complex aggregation in the schema.
+
+db
+show dbs
+use _db-name_ # for example: use duniot
+# the new database won't be created until you add values to it.
+db.duniot.insert({"name":"Dunedin IoT Database"})
+db.dropDatabase()
+db.createCollection(name, options)
+- name: name of the collection to be created
+- options: (optional) specify options about memory size and indexing
+-- capped: fixed sized collection (specify with _size_). Automatically overwrites its oldest entries when it reaches its maximum size.
+-- autoIndexId: default is false
+-- size: (in bytes) for a capped collection.
+-- max: number of documents allowed in the capped collection.
+
+show collections
+
+In MongoDB, you don't need to create collection. MongoDB creates collection automatically, when you insert some document.
+
+db.COLLECTION_NAME.drop()
+
+db.COLLECTION_NAME.save() -> If a document exists with the specified _id value, the save() method performs an update, replacing all field in the existing record with the fields from the document.
+
+db.COLLECTION_NAME.find()
+db.COLLECTION_NAME.find().pretty()
+db.COLLECTION_NAME.findOne()
+db.mycol.find({"key":"value"}).pretty() -> finds all elements where key = value
+db.mycol.find({"likes":{$lt:50}}).pretty() -> finds all elements where 'likes' < 50
+db.mycol.find({"likes":{$lte:50}}).pretty() -> finds all elements where 'likes' <= 50
+db.mycol.find({"likes":{$gte:50}}).pretty() -> finds all elements where 'likes' >= 50
+db.mycol.find({"likes":{$ne:50}}).pretty() -> finds all elements where 'likes' != 50
+db.mycol.find({$and:[{"by":"tutorials point"},{"title": "MongoDB Overview"}]}).pretty() -> multiple keys can be passed with the '$and' and separating key-value pairs with ','. Same with $or.
+db.mycol.find({"likes": {$gt:10}, $or: [{"by": "tutorials point"},{"title": "MongoDB Overview"}]}).pretty()
+db.mycol.find().limit(5)
+db.mycol.find().limit(5).skip(2)
+db.mycol.find().sort({KEY:VALUE})
+
+Indexing:
+To create an index you need to use ensureIndex()
+db.COLLECTION_NAME.ensureIndex({KEY:1})
+where key is the field on which you want to create index and 1 is for ascending order (you could use -1 for descending order)
+You can pass multiple fields to create indexes for each field.
+
+
+Aggregations:
+Group values from multiple documents and return a single result. SQL equivalent is count() and group by
+db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : 1}}}])
+
+Replication: storing the same databases across multiple locations for redundancy and availability.
+
+Sharding: splitting data across multiple machines.
+
+mongodump
+mongorestore
+MongoDB and Java - https://www.tutorialspoint.com/mongodb/mongodb_java.htm
+MongoDB and PHP - https://www.tutorialspoint.com/mongodb/mongodb_php.htm
+
+Relationships:
+in Mongo, represent how various documents are logically related to each other.
+
+
+Mongo and Python
+sudo apt-get install pip3
+pip3 install pymongo
+pip install pymongo
+
+Time to write a daemon!
+
+http://www.steves-internet-guide.com/into-mqtt-python-client/
+
+
+----------------------------------------------------------------
+To search for a specific time:
+using duniot_database
+db.duniot_collection.find({"rxInfo.0.time":"2017-08-09T03:49:04.819451Z"]}})
+This queries the database and looks for a document that has an array (rxInfo) and opens the first element in the array. It then looks at the key-value pair for time that matches the given time string.
+db.duniot_collection.find({"rxInfo.0.time":{$gte:"2017-08-09T03:49:04.819451Z"}]}})
+Same, except it returns all items with the time greater than or equal to the given time
+
