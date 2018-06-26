@@ -1,8 +1,2 @@
-name: DunedinIoT
-markdown: kramdown
-baseurl: /DunedinIoT
 theme: jekyll-theme-cayman
-repository: otagopolytechnic/DunedinIoT
-plugins_dir:
-  - jekyll-redirect-from
-
+permalink: /404.html
